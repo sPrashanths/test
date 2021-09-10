@@ -30,11 +30,12 @@ public class NavigateToLeadPageTest {
 		wLib.waitUntilPageLoad(driver);
 		driver.get(URL);
 		System.out.println("login page displayed");
-		
-		/* Step:2 login to application */
-		LoginPage login = new LoginPage(driver);
-		login.LoginToApp(USERNAME, PASSWORD);
-		System.out.println("home page displayed");
+//		
+//		/* Step:2 login to application */
+//		LoginPage login = new LoginPage(driver);
+//		login.LoginToApp(USERNAME, PASSWORD);
+//		System.out.println("home page displayed");
+		driver.quit();
 	}
 
 }
